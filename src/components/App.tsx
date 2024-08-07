@@ -73,7 +73,6 @@ const Container = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
   height: 100vh;
   width: 100vw;
 `

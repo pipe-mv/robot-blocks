@@ -27,7 +27,7 @@ const GridComponent: React.FC<GridProps> = ({
             key={Helpers.genKey(x, y)}
             id={`${x}${y}`}
             className={Helpers.isCurrentPos(x, y, currentPos) ? 'current': ''}
-            data-direction={Helpers.rotationMapper[currentDirection]}
+            data-direction={String(Helpers.rotationMapper[currentDirection])}
             onClick={onCellClick}
           >
             {Helpers.isCurrentPos(x, y, currentPos) && '🕷️'}
@@ -38,13 +38,22 @@ const GridComponent: React.FC<GridProps> = ({
   )
 }
 
-const Grid = styled.div`
+interface GridContainerProps {
+  'data-rows': number
+  'data-cols': number
+}
+
+const Grid = styled.div<GridContainerProps>`
   display: grid;
   grid-template-columns: repeat(${props => props['data-cols']}, 100px);
   grid-auto-rows: 100px;
 `
 
-const Cell = styled.div`
+interface CellProps {
+  'data-direction': string
+}
+
+const Cell = styled.div<CellProps>`
   display: flex;
   justify-content: center;
   align-items: center;

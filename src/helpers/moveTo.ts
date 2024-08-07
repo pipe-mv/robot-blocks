@@ -1,6 +1,8 @@
 type Direction = 'UP' | 'RIGHT' | 'DOWN' | 'LEFT'
 
-const movements = {
+type MovementFunction = (position: [number, number]) => [number, number];
+
+const movements: { [key in Direction]: MovementFunction } = {
   UP: ([x, y]): [number, number] => [x - 1, y],
   RIGHT: ([x, y]): [number, number] => [x, y + 1],
   DOWN: ([x, y]): [number, number] => [x + 1, y],

@@ -12,7 +12,7 @@ export const rotationMapper = {
   LEFT: 270
 }
 
-export const keyMapper = {
+export const keyMapper: { [key: string]: Direction } = {
   ArrowUp: 'UP',
   ArrowRight: 'RIGHT',
   ArrowDown: 'DOWN',
