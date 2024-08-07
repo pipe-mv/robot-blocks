@@ -56,7 +56,7 @@ Error generating stack: `+o.message+`
   }
 
   &.current {
-    background-color: #00bcc9;
+    background-color: #00BCC9;
     color: #333;
   }
 `;function Hm(e,t,n){bt.useEffect(()=>(document.addEventListener("keydown",e),()=>document.removeEventListener("keydown",e)),[e,t,n])}const{useState:Sa}=kd,Qm=4,Km=0;function Gm(){const[e,t]=Sa([0,0]),[n,r]=Sa("RIGHT"),l=()=>{const s=Fm(n,e,Qm,Km);t(s)};Hm(s=>{const c=Um[s.key];if(c){if(c!==n)return r(c);l()}},n,e);const i=s=>()=>{s===n?l():r(s)},u=s=>{const c=s.target,m=Number(c.id[0]),h=Number(c.id[1]);t([m,h])};return Ee.jsxs(Ym,{children:[Ee.jsx("span",{children:"You can also control the spider with your arrow keys"}),Ee.jsx(Bm,{rows:5,cols:5,currentPos:e,onCellClick:u,currentDirection:n}),Ee.jsxs(Xm,{children:[Ee.jsx(rl,{onClick:i("UP"),children:"↑"}),Ee.jsxs("div",{children:[Ee.jsx(rl,{className:"alt",onClick:i("LEFT"),children:"←"}),Ee.jsx(rl,{className:"alt",onClick:i("RIGHT"),children:"→"})]}),Ee.jsx(rl,{onClick:i("DOWN"),children:"↓"})]})]})}const Ym=Un.main`
@@ -64,7 +64,6 @@ Error generating stack: `+o.message+`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
   height: 100vh;
   width: 100vw;
 `,Xm=Un.div`
