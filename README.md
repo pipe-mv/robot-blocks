@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Robot Blocks App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created with with the combination of `React + TypeScript + Vite`.
 
-Currently, two official plugins are available:
+You can check out the link for this project: https://pipe-mv.github.io/robot-blocks/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### What is this?
 
-## Expanding the ESLint configuration
+This is a repo that the base code for a React.js application. The robot Blocks app will allow the user to move a spider inside of a box in an area made of 5X5 boxes!
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+<p align="center"><img src='./src/assets/LandingPage.png' width=400 ></p>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Don't be scare of the spider, Clone the repository!
+
+
+Then run:
+
+### `npm install`
+
+Finally, run:
+
+### `npm run dev`
